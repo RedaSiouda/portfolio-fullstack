@@ -1,6 +1,5 @@
 import { useNavigate } from 'react-router-dom';
 import illustration from '../assets/Portfolio Pic/undraw_programming_re_kg9v.svg';
-import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 import { Link as ScrollLink } from "react-scroll";
 import '../CSS/Homepage.css';
 
@@ -20,7 +19,7 @@ function Homepage() {
             I'm a Junior Full-stack developer based in Montreal
           </p>
           <button onClick={handleViewMyWork} className='homepage__btn'>
-          <ScrollLink to='aboutMe' smooth={true} className='linkNav'>Discover more about me</ScrollLink> <span className='homepage__span'><ArrowDownwardIcon className='arrow'/></span>
+          <ScrollLink to='aboutMe' smooth={true} className='linkNav'>Discover more about me</ScrollLink> 
           </button>
         </div>
         <div className='homepage__contentPart2'>
