@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import '../CSS/Footer.css';
 import gitIcon from '../assets/Portfolio Pic/github-mark-white.png';
-import EmailIcon from "@mui/icons-material/Email";
+
 
 function Footer() {
   // initialisation du state
@@ -33,13 +33,6 @@ function Footer() {
     <footer className='footer'>
       <div className='footer__link'>
         <img onClick={sendToGit} src={gitIcon} alt='' className='footer__linkImg' />
-        <div
-          onClick={handleEmail}
-          className='footer__linkImgEmail'
-          style={{ backgroundColor: 'transparent', fontSize: '45px', cursor: 'pointer' }}
-        >
-          <EmailIcon />
-        </div>
       </div>
 
       <div className='footer__containCredit'>
