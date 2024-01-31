@@ -1,0 +1,8 @@
+POST http://localhost:3001/api/v1/postForm
+Content-Type: application/json
+
+{
+    "email": "email@gmail.com",
+    "message": "POST test test",
+    "timeStamp": "22 janvier 14:18"
+}

@@ -27,13 +27,16 @@ const PORT = process.env.PORT || 3000; // Use a default port if PORT is not spec
 // Connect to the database and start the server
 const startServer = async () => {
     try {
+        // Connexion à la base de données
         await db.connectToDatabase();
+
+        // Lancer le serveur
         app.listen(PORT, () => {
             console.log(`Connected to the server on port ${PORT}...`);
         });
     } catch (err) {
-        console.error('Failed to connect:', err);
-        process.exit(1); // Terminate the application with an error status
+        console.error('Failed to connect to the database:', err);
+        process.exit(1); // Terminer l'application avec un statut d'erreur
     }
 };
 
