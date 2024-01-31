@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import '../CSS/Footer.css';
 import gitIcon from '../assets/Portfolio Pic/github-mark-white.png';
-import EmailIcon from '@mui/icons-material/Email';
+import EmailIcon from "@mui/icons-material/Email";
 
 function Footer() {
   // initialisation du state
