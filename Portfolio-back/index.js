@@ -8,6 +8,7 @@ const routes = require('./Routes/formRoute');
 
 const path = require('path');
 
+//initialize dotenv
 dotenv.config();
 
 // Middleware
